@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<meta name="theme-color" content="#f7f3ee"/>
+<title>Ирина. Вкус к жизни</title>
+<style>
+:root{--bg:#f3eee8;--paper:#fffdf9;--ink:#262423;--muted:#77706b;--gold:#aa8a51;--blue:#70b6e5;--red:#dc343d;--line:#ded6cb;--shadow:0 18px 48px rgba(35,31,27,.10);--r:28px}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:linear-gradient(180deg,#faf7f2 0%,#f1ebe4 100%);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.62}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 10% 0%,rgba(112,182,229,.10),transparent 24%),radial-gradient(circle at 100% 16%,rgba(220,52,61,.055),transparent 20%);z-index:-1}
+.wrap{max-width:780px;margin:0 auto;padding:14px 12px 52px}
+.page{background:rgba(255,253,249,.94);border:1px solid rgba(170,138,81,.22);border-radius:var(--r);box-shadow:var(--shadow);overflow:hidden;margin:12px 0}
+.visual img{display:block;width:100%;height:auto} .pad{padding:22px 18px 24px}
+.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.17em;color:var(--gold);font-weight:700;margin-bottom:8px}
+h1,h2{font-family:Georgia,"Times New Roman",serif;font-weight:500;letter-spacing:-.025em;margin:0} h1{font-size:41px;line-height:1.03} h2{font-size:30px;line-height:1.12;margin-bottom:10px}
+h3{font-size:17px;line-height:1.25;margin:0 0 6px} p{margin:0 0 12px} .subtitle{font-family:Georgia,"Times New Roman",serif;font-size:19px;line-height:1.48;color:#403b38;margin-top:10px}
+.tagline{font-family:Georgia,"Times New Roman",serif;font-style:italic;font-size:18px;margin-top:16px;padding-top:15px;border-top:1px solid var(--line)}
+.pills{display:flex;gap:7px;flex-wrap:wrap;margin-top:17px} .pill{font-size:11px;text-transform:uppercase;letter-spacing:.06em;border:1px solid rgba(112,182,229,.45);border-radius:999px;padding:7px 10px;background:#fff} .pill:nth-child(even){border-color:rgba(220,52,61,.34)}
+.note{border-left:3px solid var(--gold);padding:2px 0 2px 14px;color:#4a4541;font-family:Georgia,"Times New Roman",serif;font-size:17px}
+.matrix{display:grid;grid-template-columns:1fr;gap:10px;margin-top:15px} .phase{background:#fff;border:1px solid var(--line);border-radius:18px;padding:13px 14px} .phase b{display:block;color:#2d2a28;margin-bottom:3px} .age{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--gold);margin-bottom:3px}
+.symbols{display:grid;gap:10px;margin-top:14px} details{background:#fff;border:1px solid var(--line);border-radius:18px;padding:0 14px} summary{cursor:pointer;list-style:none;display:flex;gap:11px;align-items:flex-start;padding:14px 0} summary::-webkit-details-marker{display:none} .num{width:28px;height:28px;flex:0 0 28px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--gold);color:#80683c;font-family:Georgia,serif;font-size:14px} .formula{font-family:Georgia,"Times New Roman",serif;font-style:italic;color:var(--muted);margin-top:2px} .body{padding:0 0 14px 39px;color:#494440} .body ul{margin:5px 0 10px;padding-left:18px} .body li{margin:0 0 6px} .meaning{font-family:Georgia,"Times New Roman",serif;font-size:16px;color:#34302e;border-top:1px solid #eee7df;padding-top:9px}
+.unify{margin-top:14px;background:linear-gradient(135deg,rgba(112,182,229,.10),rgba(220,52,61,.05));border:1px solid rgba(170,138,81,.20);border-radius:19px;padding:15px;font-family:Georgia,"Times New Roman",serif;font-size:17px}
+.rules{display:grid;gap:10px;margin-top:14px} .rule{background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px} .rno{font-family:Georgia,serif;color:var(--gold);font-size:22px;float:left;margin-right:10px;line-height:1} .em{font-family:Georgia,"Times New Roman",serif;font-size:17px;color:#373330;margin-top:8px}
+.bigline{font-family:Georgia,"Times New Roman",serif;font-size:21px;line-height:1.42;text-align:center;padding:17px 12px 1px;color:#332f2d}
+.ending{margin:26px auto 2px;padding:20px 10px 2px;position:relative;font-size:28px;letter-spacing:-.02em;color:#2d2927}
+.ending:before{content:"";display:block;width:54px;height:1px;background:var(--gold);margin:0 auto 17px}
+.ending span{display:inline-block;font-style:italic;font-weight:500}
+.ending:after{content:"✦";display:block;color:var(--red);font-size:13px;font-style:normal;margin-top:10px}
+.final{text-align:center} .final h2{font-size:34px} .signature{font-family:Georgia,"Times New Roman",serif;font-style:italic;font-size:20px;margin-top:18px} .birthday{margin-top:18px;padding:16px;border-radius:20px;background:#fff;border:1px solid rgba(220,52,61,.16);font-family:Georgia,"Times New Roman",serif;font-size:18px;line-height:1.55}
+.small{font-size:13px;color:var(--muted)}
+@media(min-width:700px){.wrap{padding:24px 18px 64px} .pad{padding:27px 28px 30px} h1{font-size:49px} h2{font-size:34px} .matrix{grid-template-columns:1fr 1fr} .rules{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body><main class="wrap">
+
+<section class="page">
+  <div class="visual"><img src="image-1.png" alt="Ирина. Вкус к жизни"/></div>
+  <div class="pad">
+    <div class="eyebrow">Ирина • новый сезон</div>
+    <h1>Вкус к жизни</h1>
+    <p class="subtitle">Про свет, смыслы и искусство жить в своём ритме.</p>
+    <div class="pills"><span class="pill">красота</span><span class="pill">смыслы</span><span class="pill">движение</span><span class="pill">вдохновение</span><span class="pill">жизнь</span></div>
+    <div class="tagline">Когда стиль становится состоянием</div>
+  </div>
+</section>
+
+<section class="page">
+  <div class="pad">
+    <div class="eyebrow">откуда эти символы</div>
+    <h2>Небольшая карта нового десятилетия</h2>
+    <p>Этот портрет собран по дате рождения в символической системе <strong>«Матрица судьбы»</strong>. Это не предсказание и не инструкция «как должно быть», а способ посмотреть на характер и следующий жизненный этап через образы 22 арканов.</p>
+    <p>Для Ирины день рождения в этом году открывает новый цикл <strong>50–60 лет</strong>. Его главная тема — <strong>Сила</strong>: не сила всё выдерживать, а спокойная внутренняя опора, умение выбирать своё и не расходовать себя на лишнее.</p>
+    <div class="note">Смысл этой карты — не заглянуть в будущее, а чуть яснее почувствовать, что хочется взять с собой в следующие десять лет.</div>
+    <div class="matrix">
+      <div class="phase"><div class="age">50–52,5</div><b>Сила</b>Спокойная уверенность. Свои границы. Свои решения.</div>
+      <div class="phase"><div class="age">52,5–55</div><b>Колесо Фортуны</b>Обновление, движение, новые маршруты и возможности.</div>
+      <div class="phase"><div class="age">55–57,5</div><b>Звезда</b>Горизонт, вдохновение, мечты, которым снова хочется дать место.</div>
+      <div class="phase"><div class="age">57,5–60</div><b>Иерофант</b>Опыт, ставший собственной мерой, смыслом и внутренней культурой.</div>
+    </div>
+  </div>
+</section>
+
+<section class="page">
+  <div class="visual"><img src="image-2.png" alt="Пять символов Ирины"/></div>
+  <div class="pad">
+    <div class="eyebrow">пять символов</div>
+    <h2>Пять оттенков внутренней красоты</h2>
+    <p class="note"><strong>Настоящий стиль всегда изнутри.</strong><br/>Остальное — лишь детали.</p>
+    <div class="symbols">
+      <details open><summary><span class="num">1</span><span><strong>Колесо Фортуны</strong><div class="formula">лёгкость в движении жизни</div></span></summary><div class="body"><ul><li>чувствовать, когда пришло время что-то менять;</li><li>быть открытой новому без лишней тревоги;</li><li>не держаться за вчерашнее, если впереди зовёт другое;</li><li>доверять жизни, когда она предлагает новый маршрут.</li></ul><div class="meaning"><strong>Смысл:</strong> входить в новое без лишнего сопротивления и сохранять внутреннюю свободу, когда обстоятельства меняются.</div></div></details>
+      <details><summary><span class="num">2</span><span><strong>Отшельник</strong><div class="formula">внутренняя ясность</div></span></summary><div class="body"><ul><li>слышать себя, даже когда вокруг много шума;</li><li>давать решениям созреть, а не принимать их на бегу;</li><li>иногда отходить от суеты, чтобы почувствовать главное;</li><li>выбирать в согласии с собой, а не с чужими ожиданиями.</li></ul><div class="meaning"><strong>Смысл:</strong> тихая опора внутри помогает не жить на автомате и не терять себя.</div></div></details>
+      <details><summary><span class="num">3</span><span><strong>Иерофант</strong><div class="formula">зрелость и вкус</div></span></summary><div class="body"><ul><li>опыт, который со временем становится достоинством;</li><li>внутренняя культура — в словах, выборе и отношении к жизни;</li><li>умение отличать поверхностное от действительно ценного;</li><li>опираться не на моду, а на собственное чувство смысла.</li></ul><div class="meaning"><strong>Смысл:</strong> зрелость делает выборы точнее, а вкус — по-настоящему своим.</div></div></details>
+      <details><summary><span class="num">4</span><span><strong>Императрица</strong><div class="formula">красота как состояние</div></span></summary><div class="body"><ul><li>естественная женственность без усилия;</li><li>делать пространство вокруг теплее и красивее;</li><li>замечать то, что радует глаз, душу и сердце;</li><li>создавать атмосферу, в которой хочется жить.</li></ul><div class="meaning"><strong>Смысл:</strong> красота здесь — не украшение, а способ быть в мире.</div></div></details>
+      <details><summary><span class="num">5</span><span><strong>Сила</strong><div class="formula">спокойная уверенность</div></span></summary><div class="body"><ul><li>внутренняя устойчивость без жёсткости;</li><li>не доказывать, а просто быть собой;</li><li>мягко, но ясно обозначать границы;</li><li>сохранять достоинство без лишних слов.</li></ul><div class="meaning"><strong>Смысл:</strong> сила без напряжения — зрелая, красивая и очень женственная.</div></div></details>
+    </div>
+    <div class="unify">Вместе эти символы складываются в редкое сочетание: ясность, зрелость, женственность, внутреннюю свободу и способность легко входить в новое. <strong>Именно в этом — твоя тихая сила.</strong></div>
+  </div>
+</section>
+
+<section class="page">
+  <div class="visual"><img src="image-3.png" alt="Лёгкие правила нового сезона"/></div>
+  <div class="pad">
+    <div class="eyebrow">не правила, а ориентиры</div>
+    <h2>Лёгкие правила нового сезона</h2>
+    <p class="subtitle">Стильно. Спокойно. Со вкусом.</p>
+    <div class="rules">
+      <div class="rule"><span class="rno">1</span><h3>Выбирать то, что действительно откликается</h3><p>Не только то, что правильно или удобно, — но и то, в чём есть внутреннее согласие.</p></div>
+      <div class="rule"><span class="rno">2</span><h3>Не откладывать то, что наполняет жизнь</h3><p>Хорошие вечера, красивые места, интересные встречи и радость не стоит оставлять «на потом».</p><div class="em">Жизнь оживает там, где есть удовольствие, красота и движение.</div></div>
+      <div class="rule"><span class="rno">3</span><h3>Оставлять место тишине</h3><p>Иногда самый точный ответ приходит не в суете, а в паузе. Тишина помогает услышать собственную интонацию.</p></div>
+      <div class="rule"><span class="rno">4</span><h3>Не оставаться там, где душе тесно</h3><p>Даже если когда-то это казалось правильным. Даже если так удобнее другим.</p><div class="em">Право выбирать своё — одна из самых зрелых форм внутренней свободы.</div></div>
+      <div class="rule"><span class="rno">5</span><h3>Идти туда, где больше жизни</h3><p>К новым впечатлениям, красивым маршрутам, глубоким разговорам и тому, что делает мир шире.</p></div>
+    </div>
+    <div class="bigline">Истинная лёгкость всегда опирается на внутреннюю силу.</div>
+  </div>
+</section>
+
+<section class="page final">
+  <div class="visual"><img src="image-4.png" alt="Красивые маршруты"/></div>
+  <div class="pad final">
+    <div class="eyebrow">с днём рождения</div>
+    <div class="birthday">Ирина, пусть этот новый сезон будет не про цифры, а про качество жизни — про то, что радует, вдохновляет, даёт свободу и остаётся в памяти.</div>
+    <div style="text-align:left;margin-top:20px">
+      <p>Пусть рядом будут люди, с которыми легко быть собой.</p>
+      <p>Пусть будет место для путешествий, красивых вечеров, новых впечатлений и тех случайных поворотов, которые потом оказываются самыми важными.</p>
+      <p>Пусть будет достаточно тишины, чтобы слышать себя. И достаточно смелости, чтобы идти туда, где по-настоящему интересно.</p>
+    </div>
+    <div class="signature">С теплом,<br/><strong>Ольга Абрамова</strong></div>
+    <div class="bigline ending"><span>И это только начало</span></div>
+  </div>
+</section>
+
+</main></body></html>
